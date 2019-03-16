@@ -1,0 +1,15 @@
+<!-- core Jstl servlet tag library-->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<!-- date format tag library -->
+<%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt"%>
+<!-- spring form validation tag library -->
+<%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!--The above is the tag library for Spring form validation -->
+<html>
+
+<head>
+<title> List of Todo's </title>
+<link href="webjars/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
