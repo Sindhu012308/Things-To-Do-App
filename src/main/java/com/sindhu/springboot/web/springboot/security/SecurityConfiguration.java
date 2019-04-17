@@ -16,14 +16,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 @Configuration
 @EnableWebSecurity
 public class SecurityConfiguration extends WebSecurityConfigurerAdapter{
-	//Create Users - in28Minutes/dummy
+	//Create Users - sindhuKatta/dummy
 	@Autowired
 	public void configureGlobalSecurity(AuthenticationManagerBuilder auth) throws Exception{
 		PasswordEncoder encoder =
 			     PasswordEncoderFactories.createDelegatingPasswordEncoder();
 		auth.inMemoryAuthentication().withUser("sindhuKatta").password(encoder.encode("dummy")).roles("USER","ADMIN");
 
-		//auth.inMemoryAuthentication().withUser("in28Minutes").password("{noop}dummy").roles("USER","ADMIN");
+		//auth.inMemoryAuthentication().withUser("sindhuKatta").password("{noop}dummy").roles("USER","ADMIN");
 		
 	}
 	
